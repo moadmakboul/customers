@@ -2,12 +2,13 @@ let myFunction = (event)=>{
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const dateOfBirth = document.getElementById('dob').value;
+    let dateOfSubscription = new Date().toLocaleDateString("es-CL");
     let myNewCustomer = {};
-    let xhttp = new XMLHttpRequest();
-
+  
     myNewCustomer['name'] = name
     myNewCustomer['email'] = email
     myNewCustomer['date_of_birth'] = dateOfBirth
+    myNewCustomer['date_of_subscription'] = dateOfSubscription
     
     fetch("receiver", 
     {
