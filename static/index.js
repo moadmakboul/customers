@@ -25,6 +25,7 @@ let myFunction = (event)=>{
             alert('Wrong!!')
         }
     }).then(jsonResponse => {
+        document.getElementById('notification').innerHTML = '<div class="column is-half"><div class="notification is-success is-light">New Customer has been successfuly created</div></div>'
         console.log(jsonResponse)
     }).catch((err) =>console.error(err));
 }
