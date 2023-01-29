@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link href="~bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
+    <script src="static/index.js"></script>
     <title>Moad's shop</title>
 </head>
 
@@ -14,7 +15,7 @@
         <div class="column is-one-third">
             <label class="label">Name</label>
             <div class="control" >
-                <input class="input is normal" type="text" placeholder="Text input">
+                <input class="input is normal" type="text" placeholder="Text input" id="name">
             </div>
         </div>
       </div>
@@ -23,7 +24,7 @@
         <div class="column is-one-third">
             <label class="label">Email</label>
             <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                <input class="input is-danger" type="email" placeholder="Email input" value="hello@" id="email">
                 <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                 </span>
@@ -37,7 +38,7 @@
       <div class="field">
         <div class="column is-one-third">
             <label class="label">Date of birth</label>
-            <input class="input is normal" type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false">    
+            <input class="input is normal" id="dob" type="date" data-display-mode="inline" data-is-range="true" data-close-on-select="false">    
         </div>
       </div>
       
@@ -45,11 +46,9 @@
       <div class="column is-one-third">
         <div class="field is-grouped">
             <div class="control">
-              <button class="button is-link">Submit</button>
+              <button class="button is-link" onclick="myFunction()">Submit</button>
             </div>
           </div>
       </div>
-        
-    
 </body>
 </html>
